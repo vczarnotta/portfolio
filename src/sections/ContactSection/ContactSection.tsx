@@ -51,7 +51,7 @@ export default function ContactSection() {
       </div>
 
       <form 
-        // action="https://formspree.io/f/xreygyay"
+        action="https://formspree.io/f/xreygyay"
         method="POST"
         onSubmit={handleSubmit}
         className={s.form}
