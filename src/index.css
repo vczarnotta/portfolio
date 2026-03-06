@@ -48,9 +48,10 @@ h2 {
   font-size: var(--font-size-lg);
 }
 
-p {
+p, a {
   color: var(--color-text-main);
   font-size: var(--font-size-base);
+  text-decoration: none;
 }
 
 html {

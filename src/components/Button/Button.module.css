@@ -1,4 +1,5 @@
 .base {
+  font-size: var(--font-size-sm);
   padding: var(--space-sm) var(--space-base);
   border-radius: var(--radius-pill);
   border: none;
