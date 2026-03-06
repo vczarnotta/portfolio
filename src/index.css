@@ -20,7 +20,7 @@
   --space-lg: 36px;
 
   /* Radius */
-  --radius-small: 16px;
+  --radius-sm: 16px;
   --radius-base: 24px;
   --radius-pill: 999px;
 
@@ -46,6 +46,11 @@ h1 {
 h2 {
   color: var(--color-primary);
   font-size: var(--font-size-lg);
+}
+
+h3 {
+  color: var(--color-text-main);
+  font-size: var(--font-size-md);
 }
 
 p, a {

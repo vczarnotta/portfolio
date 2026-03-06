@@ -1,0 +1,51 @@
+.base {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  background-color: var(--bg-main);
+  padding: var(--space-sm);
+  border-radius: var(--radius-base);
+}
+
+.titleWrapper {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-sm);
+  font-size: 24px;
+}
+
+.lightPink {
+  background-color: var(--color-accent-soft);
+}
+
+.pink {
+  background-color: var(--color-accent);
+}
+
+.blue {
+  background-color: var(--color-info);
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  list-style: none;
+}
+
+.skill {
+  background-color: var(--color-accent-pale);
+  color: var(--color-primary);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+}
