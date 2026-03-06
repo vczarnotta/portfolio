@@ -4,7 +4,7 @@ import HeroSection from "../sections/HeroSection/HeroSection";
 import ProjectsSection from "../sections/ProjectsSection/ProjectsSection";
 import SkillsSection from "../sections/SkillsSection/SkillsSection";
 
-export default function Home() {
+export default function HomePage() {
   return(
     <>
       <HeroSection />

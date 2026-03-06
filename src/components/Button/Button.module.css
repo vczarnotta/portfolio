@@ -1,0 +1,24 @@
+.base {
+  padding: var(--space-sm) var(--space-base);
+  border-radius: var(--radius-pill);
+  border: none;
+}
+
+.base:hover {
+  cursor: pointer;
+  filter: brightness(0.95);
+  transform: translateY(-2px);
+}
+
+.base:active {
+  transform: scale(0.98);
+  filter: brightness(0.9);
+}
+
+.primary {
+  background-color: var(--color-info);
+}
+
+.secondary {
+  background-color: var(--color-accent-soft);
+}

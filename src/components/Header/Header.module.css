@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 var(--space-base);
+  height: 60px;
+  position: sticky;
+  top: 0;
+  background-color: #fafaf9dd;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.logo {
+  font-size: var(--font-size-md);
+}

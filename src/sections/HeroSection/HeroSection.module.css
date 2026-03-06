@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg-gradient);
+  padding: var(--space-lg) var(--space-base);
+  gap: var(--space-base);
+}
+
+.placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--surface);
+  width:200px;
+  height: 200px;
+  border-radius: var(--radius-pill);
+}
+
+.title {
+  color: var(--color-primary);
+  font-size: var(--font-size-md);
+  font-weight: 500;
+}
+
+.description {
+  text-align: center;
+}
+
+.buttonWrapper {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.iconWrapper {
+  display: flex;
+  gap: var(--space-base);
+}
+
+.iconLink {
+  color: var(--color-primary);
+  font-size: 24px;
+}

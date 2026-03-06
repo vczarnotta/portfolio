@@ -1,0 +1,62 @@
+:root {
+  /* Color Palatte */
+  --bg-main: #FAFAF9;
+  --bg-gradient: linear-gradient(135deg, #FDEDF3 0%, #FBDAE6 100%);
+  --surface: #D8D8D8;
+  
+  --color-primary: #880D1E;
+  --color-accent: #F26A8D;
+  --color-accent-soft: #F49CBB;
+  --color-accent-pale: #FBDAE6;
+
+  --color-info: #CBEEF3;
+  --color-text-main: #120F0F;
+  --color-text-muted: #6E6E6E;
+
+  /* space */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-base: 24px;
+  --space-lg: 36px;
+
+  /* Radius */
+  --radius-small: 16px;
+  --radius-base: 24px;
+  --radius-pill: 999px;
+
+  /* Font size */
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-md: 20px;
+  --font-size-lg: 24px;
+  --font-size-xl: 28px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;;
+}
+
+h1 {
+  color: var(--color-primary);
+  font-size: var(--font-size-xl);
+}
+
+h2 {
+  color: var(--color-primary);
+  font-size: var(--font-size-lg);
+}
+
+p {
+  color: var(--color-text-main);
+  font-size: var(--font-size-base);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button, a, svg {
+  transition: all 0.3s ease;
+}
