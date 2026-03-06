@@ -1,0 +1,42 @@
+.card {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-main);
+  gap: var(--space-sm);
+  border-radius: var(--radius-sm);
+  padding: var(--space-sm);
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-sm);
+  font-size: 24px;
+}
+
+.lightPink {
+  background-color: var(--color-accent-soft);
+}
+
+.pink {
+  background-color: var(--color-accent);
+}
+
+.blue {
+  background-color: var(--color-info);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
+.title {
+  font-size: var(--font-size-base);
+  color: var(--color-text-muted);
+  font-weight: 400;
+}

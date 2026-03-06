@@ -1,0 +1,39 @@
+.base {
+  font-size: var(--font-size-sm);
+  padding: var(--space-sm) var(--space-base);
+  border-radius: var(--radius-pill);
+  border: none;
+}
+
+.base:hover {
+  cursor: pointer;
+  filter: brightness(0.95);
+  transform: translateY(-2px);
+}
+
+.base:active {
+  transform: scale(0.98);
+  filter: brightness(0.9);
+}
+
+.primary {
+  background-color: var(--color-info);
+}
+
+.secondary {
+  background-color: var(--color-accent-soft);
+}
+
+.submit {
+  background-color: var(--color-accent);
+  color: var(--bg-main);
+  font-weight: 500;
+  border-radius: var(--radius-xs);
+  padding: var(--space-xs);
+}
+
+.transparent {
+  background-color: transparent;
+  padding: 0;
+  font-size: var(--font-size-xs);
+}
