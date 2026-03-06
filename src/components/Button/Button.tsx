@@ -1,9 +1,10 @@
+import type { ButtonHTMLAttributes } from "react"
 import s from "./Button.module.css"
 
-interface ButtonProps {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode,
-  onClick: () => void,
-  variant?: "primary" | "secondary"
+  onClick?: () => void,
+  variant?: "primary" | "secondary" | "transparent" | "submit"
 }
 
 export default function Button({variant = "primary", onClick, children}: ButtonProps) {
