@@ -14,6 +14,7 @@
   --color-text-muted: #6E6E6E;
 
   /* space */
+  --space-2xs: 4px;
   --space-xs: 8px;
   --space-sm: 16px;
   --space-base: 24px;

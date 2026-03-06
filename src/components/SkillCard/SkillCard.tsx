@@ -10,7 +10,7 @@ export default function SkillCard({variant, icon, title, skills}: SkillCardProps
 
 return(
   <article
-    className={s.base}
+    className={s.card}
   >
     <div className={s.titleWrapper}>
       <div className={`${s.icon} ${s[variant]}`}>
