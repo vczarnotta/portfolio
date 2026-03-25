@@ -1,4 +1,6 @@
 import ProjectCard from "../../components/ProjectCard/ProjectCard"
+import kotteklivImg from "../../assets/kottekliv_preview.png"
+import weatherAppImg from "../../assets/weatherapp_preview.png"
 import s from "./ProjectSection.module.css"
 
 export default function ProjectsSection() {
@@ -11,6 +13,7 @@ export default function ProjectsSection() {
         skills={["TypeScript", "React", "Context API", "Data Visualization", "React Router"]}
         codeLink="https://github.com/goteborg-1/kottekliv-productivity-app"
         demoLink="https://kottekliv.com/"
+        previewImg={{link: kotteklivImg, alt: "Kottekliv website preview"}}
       />
 
       <ProjectCard
@@ -19,6 +22,7 @@ export default function ProjectsSection() {
         skills={["Vanilla JavaScript", "HTML5", "CSS3", "API", "LocalStorage"]}
         codeLink="https://github.com/vczarnotta/weather-app"
         demoLink="https://weather-app.vczarnotta.workers.dev/"
+        previewImg={{link: weatherAppImg, alt: "Weather website preview"}}
       />
 
       <a 

@@ -3,11 +3,11 @@
   border: 1px solid var(--surface);
 }
 
-.placeholder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.previewImg {
   height: 120px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
   background-color: var(--surface);
   border-radius: var(--radius-base) var(--radius-base) 0 0;
 }

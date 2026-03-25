@@ -6,17 +6,48 @@ import Button from "../../components/Button/Button"
 import s from "./ContactSection.module.css"
 
 export default function ContactSection() {
-  const [ submitted, setSubmitted ] = useState(false)
+  const [ feedback, setFeedback ] = useState<React.ReactNode | null>(null)
 
-  const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault()
 
-    setSubmitted(true)
-    e.currentTarget.reset()
+    const form = e.currentTarget
+    const formData = new FormData(form)
 
-    setTimeout(() => {
-      setSubmitted(false)
-    }, 5 * 1000)
+    try {
+      const res = await fetch("https://formspree.io/f/xreygyay", {
+        method: "POST",
+        body: formData,
+        headers: {
+          "Accept": "application/json"
+        }
+      })
+
+      if(!res.ok) {
+        setFeedback(
+          <span>Kunde inte skicka meddelandet just nu. Vänligen försök igen eller kontakta mig direkt på:{" "}
+            <a href="mailto:vczarnotta@gmail.com" className={s.link}>vczarnotta@gmail.com</a>
+          </span>
+        )
+        return
+      } 
+        
+
+      setFeedback("Tack för ditt mail! Jag återkommer så snart jag kan.")
+      form.reset()
+
+    } catch {
+      setFeedback(
+        <span>Kunde inte ansluta till servern. Kontrollera din anslutning eller maila:{" "}
+          <a href="mailto:vczarnotta@gmail.com" className={s.link}>vczarnotta@gmail.com</a>
+        </span>
+      )
+
+    } finally {
+      setTimeout(() => {
+        setFeedback(null)
+      }, 10 * 1000)
+    }
   }
 
   return(
@@ -50,9 +81,7 @@ export default function ContactSection() {
         </ContactCard>
       </div>
 
-      <form 
-        action="https://formspree.io/f/xreygyay"
-        method="POST"
+      <form
         onSubmit={handleSubmit}
         className={s.form}
       >
@@ -90,7 +119,7 @@ export default function ContactSection() {
             Skicka Meddelande
         </Button>
 
-        {submitted && <p className={s.successMessage}>Tack för ditt mail! Jag återkommer så snart jag kan.</p>}
+        {feedback && <p className={s.feedback}>{feedback}</p>}
       </form>
 
     </section>

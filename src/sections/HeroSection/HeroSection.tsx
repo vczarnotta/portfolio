@@ -1,18 +1,19 @@
 import Button from "../../components/Button/Button"
 import { LuGithub, LuLinkedin, LuMail } from "react-icons/lu";
 import s from "./HeroSection.module.css"
+import profileImg from "../../assets/veronica_czarnotta.jpg"
 
 export default function HeroSection() {
   return(
     <section className={s.container}>
-      <div className={s.placeholder}>Placeholder</div>
+      <img src={profileImg} alt="Veronica Czarnotta" className={s.profileImg}/>
 
       <div>
         <h1>Veronica Czarnotta</h1>
         <p className={s.title}>Fullstack JavaScript Student</p>
       </div>
 
-      <p className={s.description}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, ab aspernatur fugiat quo quia doloremque nesciunt.</p>
+      <p className={s.description}>Fullstack-studerande med passion för frontend och UX/UI. Söker 6 månaders LIA-praktik med start i november 2026.</p>
 
       <div className={s.buttonWrapper}>
         <Button

@@ -7,6 +7,10 @@
   padding: var(--space-lg) var(--space-base);
 }
 
+.description {
+  text-align: center;
+}
+
 .skillsWrapper {
   display: flex;
   flex-direction: column;

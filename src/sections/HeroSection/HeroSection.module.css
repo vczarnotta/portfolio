@@ -7,13 +7,10 @@
   gap: var(--space-base);
 }
 
-.placeholder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--surface);
+.profileImg {
   width:200px;
   height: 200px;
+  object-fit: cover;
   border-radius: var(--radius-pill);
 }
 

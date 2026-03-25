@@ -6,9 +6,9 @@ export default function AboutSection() {
       <h2>Om Mig</h2>
 
       <div className={s.text}>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat deserunt neque obcaecati numquam incidunt dolorem perferendis velit error doloribus eum dignissimos pariatur veritatis, saepe illo quam quas.</p>
-        <p>Neque quae aut laudantium expedita ipsum, minima maxime! Architecto illum enim assumenda reiciendis illo sapiente facere inventore, laudantium autem tempore pariatur doloremque commodi dignissimos, error doloribus, dolorum perferendis cumque quasi sed totam a voluptate et?</p>
-        <p>Dolorem veritatis aliquid placeat assumenda expedita iste necessitatibus. Provident laboriosam excepturi, nostrum aliquid dolores explicabo quisquam porro et, delectus at incidunt blanditiis impedit eligendi voluptatibus ut quasi dicta sunt aliquam dolor quo? Dolores eius repellendus molestiae culpa architecto?</p>
+        <p>Jag studerar just nu till Fullstack JavaScript-utvecklare på Chas Academy och är särskilt intresserad av frontendutveckling och UX/UI-design. Under utbildningen kommer jag få en bred grund inom både frontend och backend, men det är i gränslandet mellan teknik och design jag trivs allra bäst. Jag gillar att jobba kreativt, samarbeta i team och att hela tiden lära mig nya saker.</p>
+
+        <p>I november 2026 söker jag en LIA-praktik på 6 månader och letar efter en plats där jag får möjlighet att utvecklas inom frontend och gärna även UX/UI. Är du eller ditt företag intresserade av att ta emot praktikanter framöver? Hör gärna av dig!</p>
       </div>
       
       <a
