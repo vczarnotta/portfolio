@@ -36,8 +36,8 @@
   font-size: var(--font-size-sm);
   color: var(--color-text-main);
   padding: var(--space-2xs) var(--space-xs);
-  border: 1px solid var(--border);
   border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-sm);
   white-space: nowrap;
 }
 
@@ -56,6 +56,7 @@
   border-radius: var(--radius-pill);
   border: none;
   font-size: var(--font-size-sm);
+  font-weight: 500;
   line-height: 1;
   box-shadow: var(--shadow-sm);
 }

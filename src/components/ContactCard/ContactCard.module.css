@@ -16,6 +16,7 @@
   height: 52px;
   border-radius: var(--radius-sm);
   font-size: 24px;
+  color: var(--color-text-main);
 }
 
 .primary {

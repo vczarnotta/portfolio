@@ -43,7 +43,7 @@
   background-color: var(--bg-secondary);
   color: var(--color-text-main);
   padding: var(--space-xs) var(--space-sm);
-  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
   border-radius: var(--radius-pill);
   white-space: nowrap;
 }

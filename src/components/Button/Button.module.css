@@ -1,5 +1,6 @@
 .base {
   font-size: var(--font-size-sm);
+  font-weight: 500;
   padding: var(--space-sm) var(--space-base);
   border-radius: var(--radius-pill);
   border: none;
@@ -28,8 +29,6 @@
 
 .submit {
   background-color: var(--color-primary);
-  color: var(--bg-main);
-  font-weight: 500;
   border-radius: var(--radius-xs);
   padding: var(--space-xs);
 }

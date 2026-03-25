@@ -1,6 +1,7 @@
 :root {
   /* Color Palatte */
   --bg-main: #ffffff;
+  --bg-header: #ffffffd9;
   --bg-secondary: #F7F9F7;
   --border: #E5E7EB;
   
@@ -38,10 +39,31 @@
   --font-size-xl: 28px;
 }
 
+/* Dark Mode */
+html.dark {
+  --bg-main: #121412;
+  --bg-header: #121412d9;
+  --bg-secondary: #1c1f1c;
+  --border: #2d332d;
+  
+  --color-important: #dcf2da;
+  --color-primary: #3d5236;
+  --color-secondary: #7a3d44;
+  --color-accent: #2a3b4a;
+  
+  --color-text-main: #b0b8b0;
+  --color-text-muted: #7d857d;
+}
+
 * {
   padding: 0;
   margin: 0;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  transition: 
+    background-color 0.2s ease, 
+    border-color 0.2s ease, 
+    stroke 0.2s ease, 
+    box-shadow 0.2s ease;
 }
 
 h1 {
