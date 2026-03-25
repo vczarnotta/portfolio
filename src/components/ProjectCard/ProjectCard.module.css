@@ -4,7 +4,7 @@
 }
 
 .previewImg {
-  height: 120px;
+  height: 150px;
   width: 100%;
   object-fit: cover;
   object-position: top;
