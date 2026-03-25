@@ -5,6 +5,7 @@
   background-color: var(--bg-main);
   padding: var(--space-sm);
   border-radius: var(--radius-base);
+  box-shadow: var(--shadow-card);
 }
 
 .titleWrapper {

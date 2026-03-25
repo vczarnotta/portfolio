@@ -1,10 +1,10 @@
 import { useState } from "react"
 import { LuMail, LuPhone, LuMapPin } from "react-icons/lu"
+import Container from "../../components/Container/Container"
 import ContactCard from "../../components/ContactCard/ContactCard"
 import Input from "../../components/Input/Input"
 import Button from "../../components/Button/Button"
 import s from "./ContactSection.module.css"
-import Container from "../../components/Container/Container"
 
 export default function ContactSection() {
   const [ feedback, setFeedback ] = useState<React.ReactNode | null>(null)

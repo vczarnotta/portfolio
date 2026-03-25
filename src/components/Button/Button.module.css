@@ -3,6 +3,7 @@
   padding: var(--space-sm) var(--space-base);
   border-radius: var(--radius-pill);
   border: none;
+  box-shadow: var(--shadow-sm);
 }
 
 .base:hover {
@@ -36,4 +37,5 @@
   background-color: transparent;
   padding: 0;
   font-size: var(--font-size-xs);
+  box-shadow: none;
 }

@@ -21,6 +21,7 @@
   background-color: var(--bg-main);
   padding: var(--space-base);
   border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-card);
 }
 
 .textareaWrapper {

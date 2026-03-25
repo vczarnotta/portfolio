@@ -5,6 +5,7 @@
   gap: var(--space-sm);
   border-radius: var(--radius-sm);
   padding: var(--space-sm);
+  box-shadow: var(--shadow-card);
 }
 
 .iconWrapper {
@@ -38,5 +39,5 @@
 .title {
   font-size: var(--font-size-base);
   color: var(--color-text-muted);
-  font-weight: 400;
+  font-weight: normal;
 }

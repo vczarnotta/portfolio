@@ -10,6 +10,7 @@
   padding: var(--space-sm) var(--space-base);
   border-radius: var(--radius-pill);
   border: none;
+  box-shadow: var(--shadow-sm);
 }
 
 .buttonLink:hover {
