@@ -1,5 +1,5 @@
 .subTitle {
-  color: var(--color-primary);
+  color: var(--color-important);
   font-weight: 500;
   text-align: center;
 }
@@ -36,16 +36,16 @@
 }
 
 .textarea {
-  background-color: var(--surface-light);
+  background-color: var(--bg-main);
   padding: var(--space-xs) var(--space-sm);
   min-height: 80px;
   resize: vertical;
   border-radius: var(--radius-xs);
-  border: 1px solid var(--color-accent-soft);
+  border: 1px solid var(--border);
 }
 
 .feedback {
-  color: var(--color-primary);
+  color: var(--color-important);
   font-size: var(--font-size-sm);
   font-weight: 500;
   text-align: center;
@@ -55,7 +55,7 @@
 
 .link {
   display: inline-block;
-  color: var(--color-primary);
+  color: var(--color-important);
   font-size: var(--font-size-sm);
   text-decoration: underline;
 }

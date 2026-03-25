@@ -60,7 +60,7 @@ export default function ContactSection() {
         <ContactCard
           icon={<LuMail />}
           title="Email"
-          variant="lightPink"
+          variant="primary"
         >
           <a href="mailto:vczarnotta@gmail.com">vczarnotta@gmail.com</a>
         </ContactCard>
@@ -68,7 +68,7 @@ export default function ContactSection() {
         <ContactCard
           icon={<LuPhone />}
           title="Telefon"
-          variant="blue"
+          variant="secondary"
         >
           <a href="tel:+46703469591">+46 70-346 95 91</a>
         </ContactCard>
@@ -76,7 +76,7 @@ export default function ContactSection() {
         <ContactCard
           icon={<LuMapPin />}
           title="Stad"
-          variant="pink"
+          variant="accent"
         >
           <p>Göteborg</p>
         </ContactCard>

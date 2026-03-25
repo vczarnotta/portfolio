@@ -5,7 +5,7 @@
   gap: var(--space-2xs);
   padding: var(--space-base) 0;
   background-color: var(--color-bg);
-  border-top: 1px solid var(--surface-light);
+  border-top: 1px solid var(--bg-main);
 }
 
 .copyright {
@@ -13,7 +13,7 @@
 }
 
 .button {
-  background-color: var(--color-primary);
+  background-color: var(--color-important);
   color: var(--color-light);
   border: none;
   border-radius: var(--radius-sm);

@@ -1,6 +1,6 @@
 import s from "./SkillCard.module.css"
 interface SkillCardProps {
-  variant: "lightPink" | "pink" | "blue",
+  variant: "primary" | "secondary",
   icon: React.ReactNode,
   title: string,
   skills: string[]
