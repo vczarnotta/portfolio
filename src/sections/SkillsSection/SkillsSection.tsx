@@ -10,14 +10,14 @@ export default function SkillsSection() {
       <p className={s.description}>Inför min LIA kommer jag, genom min utbildning till Fullstack JavaScript-utvecklare, ha byggt upp en bred kompetens inom både frontend och backend. Mina kunskaper kommer bland annat omfatta:</p>
       <div className={s.skillsWrapper}>
         <SkillCard
-          variant="lightPink"
+          variant="primary"
           icon={<LuLayoutTemplate />}
           title="Frontend & Design"
           skills={["React", "React-Native", "JavaScript (ES6+)", "TypeScript", "HTML5 / CSS3", "Responsiv Design", "Webbprestanda"]}
         />
 
         <SkillCard
-          variant="blue"
+          variant="secondary"
           icon={<LuServer />}
           title="Backend & Utveckling"
           skills={["Node.js / Express", "REST API:er", "Databaser (Relational/Document)", "Git / Github", "TDD & Testing (Jest)", "Webbsäkerhet (OWASP)", "DevOps-principer", "Agilt arbetssätt"]}

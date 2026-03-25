@@ -3,7 +3,7 @@ import s from "./ContactCard.module.css"
 interface ContactCardProps {
   icon: React.ReactNode,
   title: string,
-  variant: "lightPink" | "pink" | "blue"
+  variant: "primary" | "secondary" | "accent"
   children: React.ReactNode
 }
 

@@ -19,15 +19,15 @@
 }
 
 .primary {
-  background-color: var(--color-info);
+  background-color: var(--color-secondary);
 }
 
 .secondary {
-  background-color: var(--color-accent-soft);
+  background-color: var(--color-primary);
 }
 
 .submit {
-  background-color: var(--color-accent);
+  background-color: var(--color-primary);
   color: var(--bg-main);
   font-weight: 500;
   border-radius: var(--radius-xs);

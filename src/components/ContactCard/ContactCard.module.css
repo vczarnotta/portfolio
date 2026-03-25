@@ -18,16 +18,16 @@
   font-size: 24px;
 }
 
-.lightPink {
-  background-color: var(--color-accent-soft);
+.primary {
+  background-color: var(--color-primary);
 }
 
-.pink {
+.secondary {
+  background-color: var(--color-secondary);
+}
+
+.accent {
   background-color: var(--color-accent);
-}
-
-.blue {
-  background-color: var(--color-info);
 }
 
 .content {

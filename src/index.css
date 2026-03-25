@@ -1,19 +1,16 @@
 :root {
   /* Color Palatte */
-  --bg-main: #FAFAF9;
-  --bg-gradient: linear-gradient(135deg, #FDEDF3 0%, #FBDAE6 100%);
-  --bg-gradient-dark: linear-gradient(135deg, #F49CBB 0%, #F26A8D 100%);
-  --surface-light: #F5F5F5;
-  --surface: #D8D8D8;
+  --bg-main: #ffffff;
+  --bg-secondary: #F7F9F7;
+  --border: #E5E7EB;
   
-  --color-primary: #880D1E;
-  --color-accent: #F26A8D;
-  --color-accent-soft: #F49CBB;
-  --color-accent-pale: #FBDAE6;
+  --color-important: #2A3029;
+  --color-primary: #77966B;
+  --color-secondary: #FFB5BC;
+  --color-accent: #C3E2FF;
 
-  --color-info: #CBEEF3;
-  --color-text-main: #120F0F;
-  --color-text-muted: #6E6E6E;
+  --color-text-main: #1C1F1C;
+  --color-text-muted: #6B7280;
 
   /* shadow */
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -48,12 +45,12 @@
 }
 
 h1 {
-  color: var(--color-primary);
+  color: var(--color-important);
   font-size: var(--font-size-xl);
 }
 
 h2 {
-  color: var(--color-primary);
+  color: var(--color-important);
   font-size: var(--font-size-lg);
   text-align: center;
 }
