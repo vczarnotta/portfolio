@@ -10,8 +10,8 @@ export default function ProjectsSection() {
       <h2>Utvalda Projekt</h2>
       <ProjectCard
         title="Produktivitetsapp"
-        description="En webbaserad lösning för tidshantering, utvecklad som ett samarbetsprojekt. Appen erbjuder både vanligt stoppur och pomodoro-timer där sessioner loggas och visualiseras genom grafer. Inkluderar en integrerad Todo-modul för uppgiftshantering. Projektet är under aktiv utveckling."
-        skills={["TypeScript", "React", "Context API", "Data Visualization", "React Router"]}
+        description="Ett produktivitetsverktyg för tidshantering, utvecklat som ett samarbetsprojekt i ett monorepo. Projektet omfattar en komplett webbapplikation i React samt utvalda delar implementerade i React Native för att utforska koddelning mellan plattformar. Appen erbjuder både stoppur och pomodoro-timer med datavisualisering via grafer, samt en integrerad Todo-modul för uppgiftshantering."
+        skills={["TypeScript", "React", "React Native", "Monorepo", "Jest Testing", "Context API", "Data Visualization"]}
         codeLink="https://github.com/goteborg-1/kottekliv-productivity-app"
         demoLink="https://kottekliv.com/"
         previewImg={{link: kotteklivImg, alt: "Kottekliv website preview"}}
