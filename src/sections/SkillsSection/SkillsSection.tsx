@@ -1,47 +1,28 @@
+import Container from "../../components/Container/Container";
 import SkillCard from "../../components/SkillCard/SkillCard"
-import { LuLayoutTemplate, LuServer, LuWrench, LuCode, LuZap } from "react-icons/lu";
+import { LuLayoutTemplate, LuServer} from "react-icons/lu";
 import s from "./skillsSection.module.css"
 
 export default function SkillsSection() {
   return(
-    <section className={s.container}>
+    <Container variant="gradient">
       <h2>Tekniska Färdigheter</h2>
+      <p className={s.description}>Inför min LIA kommer jag, genom min utbildning till Fullstack JavaScript-utvecklare, ha byggt upp en bred kompetens inom både frontend och backend. Mina kunskaper kommer bland annat omfatta:</p>
       <div className={s.skillsWrapper}>
         <SkillCard
           variant="lightPink"
           icon={<LuLayoutTemplate />}
-          title="Frontend"
-          skills={["React", "JavaScript", "TypeScript", "HTML5", "CSS3"]}
-        />
-
-        <SkillCard
-          variant="pink"
-          icon={<LuServer />}
-          title="Backend"
-          skills={["JavaScript", "Node.js"]}
+          title="Frontend & Design"
+          skills={["React", "React-Native", "JavaScript (ES6+)", "TypeScript", "HTML5 / CSS3", "Responsiv Design", "Webbprestanda"]}
         />
 
         <SkillCard
           variant="blue"
-          icon={<LuWrench />}
-          title="Tools"
-          skills={["Git", "Github", "VS Code"]}
-        />
-
-        <SkillCard
-          variant="lightPink"
-          icon={<LuCode />}
-          title="Core"
-          skills={["JavaScript ES6+", "Async/Await", "Promises"]}
-        />
-
-        <SkillCard
-          variant="pink"
-          icon={<LuZap />}
-          title="Other"
-          skills={["Responsiv Design", "Testing (Jest)", "Agilt arbetssätt", "Webbprestanda"]}
+          icon={<LuServer />}
+          title="Backend & Utveckling"
+          skills={["Node.js / Express", "REST API:er", "Databaser (Relational/Document)", "Git / Github", "TDD & Testing (Jest)", "Webbsäkerhet (OWASP)", "DevOps-principer", "Agilt arbetssätt"]}
         />
       </div>
-    </section>
+    </Container>
   )
 }

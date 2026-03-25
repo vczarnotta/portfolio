@@ -1,16 +1,29 @@
+import Container from "../../components/Container/Container"
 import ProjectCard from "../../components/ProjectCard/ProjectCard"
+import kotteklivSmall from "../../assets/kottekliv_preview_small.webp"
+import kotteklivMedium from "../../assets/kottekliv_preview_medium.webp"
+import kotteklivLarge from "../../assets/kottekliv_preview_Large.webp"
+import weatherSmall from "../../assets/weatherapp_preview_small.webp"
+import weatherMedium from "../../assets/weatherapp_preview_medium.webp"
+import weatherLarge from "../../assets/weatherapp_preview_large.webp"
 import s from "./ProjectSection.module.css"
 
 export default function ProjectsSection() {
   return(
-    <section id="projects" className={s.container}>
+    <Container id="projects" center>
       <h2>Utvalda Projekt</h2>
       <ProjectCard
         title="Produktivitetsapp"
-        description="En webbaserad lösning för tidshantering, utvecklad som ett samarbetsprojekt. Appen erbjuder både vanligt stoppur och pomodoro-timer där sessioner loggas och visualiseras genom grafer. Inkluderar en integrerad Todo-modul för uppgiftshantering. Projektet är under aktiv utveckling."
-        skills={["TypeScript", "React", "Context API", "Data Visualization", "React Router"]}
+        description="Ett produktivitetsverktyg för tidshantering, utvecklat som ett samarbetsprojekt i ett monorepo. Projektet omfattar en komplett webbapplikation i React samt utvalda delar implementerade i React Native för att utforska koddelning mellan plattformar. Appen erbjuder både stoppur och pomodoro-timer med datavisualisering via grafer, samt en integrerad Todo-modul för uppgiftshantering."
+        skills={["TypeScript", "React", "React Native", "Monorepo", "Jest Testing", "Context API", "Data Visualization"]}
         codeLink="https://github.com/goteborg-1/kottekliv-productivity-app"
         demoLink="https://kottekliv.com/"
+        previewImg={{
+          small: kotteklivSmall,
+          medium: kotteklivMedium,
+          large: kotteklivLarge, 
+          alt: "Kottekliv website preview"
+        }}
       />
 
       <ProjectCard
@@ -19,6 +32,12 @@ export default function ProjectsSection() {
         skills={["Vanilla JavaScript", "HTML5", "CSS3", "API", "LocalStorage"]}
         codeLink="https://github.com/vczarnotta/weather-app"
         demoLink="https://weather-app.vczarnotta.workers.dev/"
+        previewImg={{
+          small: weatherSmall,
+          medium: weatherMedium,
+          large: weatherLarge,
+          alt: "Weather website preview"
+        }}
       />
 
       <a 
@@ -29,6 +48,6 @@ export default function ProjectsSection() {
       >
         Se fler av mina projekt -{">"}
       </a>
-    </section>
+    </Container>
   )
 }

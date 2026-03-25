@@ -6,13 +6,30 @@ interface ProjectCardProps {
   description: string,
   skills: string[],
   codeLink: string,
-  demoLink: string
+  demoLink: string,
+  previewImg: {
+    small: string,
+    medium: string,
+    large: string,
+    alt: string
+  }
 }
 
-export default function ProjectCard({title, description, skills, codeLink, demoLink}: ProjectCardProps) {
+export default function ProjectCard({title, description, skills, codeLink, demoLink, previewImg}: ProjectCardProps) {
   return(
     <article className={s.card}>
-      <div className={s.placeholder}>Placeholder</div>
+      <img
+        srcSet={`
+          ${previewImg.small} 400w,
+          ${previewImg.medium} 800w,
+          ${previewImg.large} 1200w
+        `}
+        sizes="(max-width: 700px) 100vw, 700px"
+        src={previewImg.large}
+        loading="lazy"
+        alt={previewImg.alt} 
+        className={s.previewImg}
+      />
       <div className={s.content}>
         <h3 className={s.title}>{title}</h3>
         <p>{description}</p>

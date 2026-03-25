@@ -1,13 +1,14 @@
 .card {
   border-radius: var(--radius-base);
   border: 1px solid var(--surface);
+  box-shadow: var(--shadow-card);
 }
 
-.placeholder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
+.previewImg {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
   background-color: var(--surface);
   border-radius: var(--radius-base) var(--radius-base) 0 0;
 }
@@ -55,6 +56,7 @@
   border: none;
   font-size: var(--font-size-sm);
   line-height: 1;
+  box-shadow: var(--shadow-sm);
 }
 
 .button:hover {
