@@ -5,7 +5,7 @@
 }
 
 .buttonLink {
-  background-color: var(--color-secondary);
+  background-color: var(--color-accent);
   font-size: var(--font-size-sm);
   padding: var(--space-sm) var(--space-base);
   border-radius: var(--radius-pill);
