@@ -1,11 +1,12 @@
 import Button from "../../components/Button/Button"
+import Container from "../../components/Container/Container";
 import { LuGithub, LuLinkedin, LuMail } from "react-icons/lu";
-import s from "./HeroSection.module.css"
 import profileImg from "../../assets/veronica_czarnotta.jpg"
+import s from "./HeroSection.module.css"
 
 export default function HeroSection() {
   return(
-    <section className={s.container}>
+    <Container variant="gradient" center>
       <img src={profileImg} alt="Veronica Czarnotta" className={s.profileImg}/>
 
       <div>
@@ -56,6 +57,6 @@ export default function HeroSection() {
           <LuMail />
         </a>
       </div>
-    </section>
+    </Container>
   )
 }

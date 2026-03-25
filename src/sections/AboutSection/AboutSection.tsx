@@ -1,8 +1,9 @@
+import Container from "../../components/Container/Container"
 import s from "./AboutSection.module.css"
 
 export default function AboutSection() {
   return(
-    <section className={s.container}>
+    <Container center>
       <h2>Om Mig</h2>
 
       <div className={s.text}>
@@ -18,6 +19,6 @@ export default function AboutSection() {
       >
         Ladda ner mitt CV
       </a>
-    </section>
+    </Container>
   )
 }

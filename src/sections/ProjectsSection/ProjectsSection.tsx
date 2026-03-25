@@ -2,10 +2,11 @@ import ProjectCard from "../../components/ProjectCard/ProjectCard"
 import kotteklivImg from "../../assets/kottekliv_preview.png"
 import weatherAppImg from "../../assets/weatherapp_preview.png"
 import s from "./ProjectSection.module.css"
+import Container from "../../components/Container/Container"
 
 export default function ProjectsSection() {
   return(
-    <section id="projects" className={s.container}>
+    <Container id="projects" center>
       <h2>Utvalda Projekt</h2>
       <ProjectCard
         title="Produktivitetsapp"
@@ -33,6 +34,6 @@ export default function ProjectsSection() {
       >
         Se fler av mina projekt -{">"}
       </a>
-    </section>
+    </Container>
   )
 }

@@ -4,6 +4,7 @@ import ContactCard from "../../components/ContactCard/ContactCard"
 import Input from "../../components/Input/Input"
 import Button from "../../components/Button/Button"
 import s from "./ContactSection.module.css"
+import Container from "../../components/Container/Container"
 
 export default function ContactSection() {
   const [ feedback, setFeedback ] = useState<React.ReactNode | null>(null)
@@ -51,7 +52,7 @@ export default function ContactSection() {
   }
 
   return(
-    <section id="contact" className={s.container}>
+    <Container variant="gradient" id="contact">
       <h2>Kontakta mig</h2>
       <p className={s.subTitle}>Söker du en LIA-praktikant? Hör gärna av dig!</p>
       <p className={s.description}>Jag är väldigt nyfiken på att arbeta med riktiga projekt och utvecklas tillsammans med ett team. Jag bidrar gärna med engagemang, nyfikenhet och en vilja att lära mig.</p>
@@ -121,7 +122,6 @@ export default function ContactSection() {
 
         {feedback && <p className={s.feedback}>{feedback}</p>}
       </form>
-
-    </section>
+    </Container>
   )
 }
