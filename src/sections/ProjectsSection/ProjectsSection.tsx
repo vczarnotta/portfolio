@@ -10,6 +10,7 @@ import weatherMedium from "../../assets/weatherapp_preview_medium.webp"
 import weatherLarge from "../../assets/weatherapp_preview_large.webp"
 
 import s from "./ProjectSection.module.css"
+import b from "../../components/Button/Button.module.css"
 
 export default function ProjectsSection() {
   return(
@@ -47,7 +48,7 @@ export default function ProjectsSection() {
         href="https://github.com/vczarnotta"
         target="_blank"
         rel="noopener noreferrer"
-        className={s.readMore}
+        className={`${s.readMore} ${b.base} ${b.transparent}`}
       >
         Se fler av mina projekt -{">"}
       </a>

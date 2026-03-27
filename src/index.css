@@ -9,7 +9,7 @@
   --color-secondary: #FFB5BC;
   --color-accent: #C3E2FF;
   
-  --color-important: #2A3029;
+  --color-heading: #2A3029;
   --color-text-main: #1C1F1C;
   --color-text-muted: #6B7280;
   --color-text-on-accent: #111a11;
@@ -51,7 +51,7 @@ html.dark {
   --color-secondary: #c99399;
   --color-accent: #8fb1cf;
 
-  --color-important: #e5e2db;
+  --color-heading: #e5e2db;
   --color-text-main: #b8b5ae;
   --color-text-muted: #7a7873;
   --color-text-on-accent: #1a1a18;
@@ -69,12 +69,12 @@ html.dark {
 }
 
 h1 {
-  color: var(--color-important);
+  color: var(--color-heading);
   font-size: var(--font-size-xl);
 }
 
 h2 {
-  color: var(--color-important);
+  color: var(--color-heading);
   font-size: var(--font-size-lg);
   text-align: center;
 }
