@@ -1,12 +1,16 @@
 import Container from "../../components/Container/Container"
 import ProjectCard from "../../components/ProjectCard/ProjectCard"
+
 import kotteklivSmall from "../../assets/kottekliv_preview_small.webp"
 import kotteklivMedium from "../../assets/kottekliv_preview_medium.webp"
 import kotteklivLarge from "../../assets/kottekliv_preview_large.webp"
+
 import weatherSmall from "../../assets/weatherapp_preview_small.webp"
 import weatherMedium from "../../assets/weatherapp_preview_medium.webp"
 import weatherLarge from "../../assets/weatherapp_preview_large.webp"
+
 import s from "./ProjectSection.module.css"
+import b from "../../components/Button/Button.module.css"
 
 export default function ProjectsSection() {
   return(
@@ -44,7 +48,7 @@ export default function ProjectsSection() {
         href="https://github.com/vczarnotta"
         target="_blank"
         rel="noopener noreferrer"
-        className={s.readMore}
+        className={`${s.readMore} ${b.base} ${b.transparent}`}
       >
         Se fler av mina projekt -{">"}
       </a>

@@ -1,5 +1,6 @@
 import { LuGithub, LuExternalLink } from "react-icons/lu"
 import s from "./ProjectCard.module.css"
+import b from "../Button/Button.module.css"
 
 interface ProjectCardProps {
   title: string,
@@ -43,7 +44,7 @@ export default function ProjectCard({title, description, skills, codeLink, demoL
             href={codeLink}
             target="_blank"
             rel="noopener noreferrer"
-            className={`${s.button} ${s.secondary}`}
+            className={`${b.base} ${s.button} ${b.secondary}`}
           >
             <span className={s.icon}><LuGithub /></span>
             <span>Kod</span>
@@ -52,7 +53,7 @@ export default function ProjectCard({title, description, skills, codeLink, demoL
             href={demoLink}
             target="_blank"
             rel="noopener noreferrer"
-            className={`${s.button} ${s.primary}`}
+            className={`${b.base} ${s.button} ${b.primary}`}
           >
             <span className={s.icon}><LuExternalLink /></span>
             <span>Demo</span>

@@ -1,5 +1,6 @@
 import Container from "../../components/Container/Container"
 import s from "./AboutSection.module.css"
+import b from "../../components/Button/Button.module.css"
 
 export default function AboutSection() {
   return(
@@ -11,11 +12,10 @@ export default function AboutSection() {
 
         <p>I november 2026 söker jag en LIA-praktik på 6 månader och letar efter en plats där jag får möjlighet att utvecklas inom frontend och gärna även UX/UI. Är du eller ditt företag intresserade av att ta emot praktikanter framöver? Hör gärna av dig!</p>
       </div>
-      
       <a
         href="/resume.pdf"
         download="Veronica_Czarnotta_CV.pdf"
-        className={s.buttonLink}
+        className={`${b.base} ${s.buttonLink}`}
       >
         Ladda ner mitt CV
       </a>
