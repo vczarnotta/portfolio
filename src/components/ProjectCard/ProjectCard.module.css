@@ -48,36 +48,11 @@
 
 .button {
   display: flex;
+  flex: 1;
+  line-height: 1;
   justify-content: center;
   align-items: center;
-  flex: 1;
   gap: var(--space-xs);
-  padding: var(--space-sm) var(--space-base);
-  border-radius: var(--radius-pill);
-  border: none;
-  font-size: var(--font-size-sm);
-  font-weight: 500;
-  line-height: 1;
-  box-shadow: var(--shadow-sm);
-}
-
-.button:hover {
-  cursor: pointer;
-  filter: brightness(0.95);
-  transform: translateY(-2px);
-}
-
-.button:active {
-  transform: scale(0.98);
-  filter: brightness(0.9);
-}
-
-.secondary {
-  background-color: var(--color-primary);
-}
-
-.primary {
-  background-color: var(--color-secondary);
 }
 
 .icon {

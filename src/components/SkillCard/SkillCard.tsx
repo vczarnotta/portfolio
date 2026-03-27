@@ -1,4 +1,5 @@
 import s from "./SkillCard.module.css"
+
 interface SkillCardProps {
   variant: "primary" | "secondary",
   icon: React.ReactNode,
