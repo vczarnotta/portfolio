@@ -20,7 +20,7 @@ export default function SkillsSection() {
           variant="secondary"
           icon={<LuServer />}
           title="Backend & Utveckling"
-          skills={["Node.js / Express", "REST API:er", "Databaser (Relational/Document)", "Git / Github", "TDD & Testing (Jest)", "Webbsäkerhet (OWASP)", "DevOps-principer", "Agilt arbetssätt"]}
+          skills={["Node.js / Express", "REST API:er", "MongoDB", "Mongoose", "Git / Github", "TDD & Testing (Jest)", "Webbsäkerhet (OWASP)", "DevOps-principer", "Agilt arbetssätt"]}
         />
       </div>
     </Container>

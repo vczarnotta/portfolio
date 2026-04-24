@@ -1,6 +1,8 @@
 import Container from "../../components/Container/Container"
 import ProjectCard from "../../components/ProjectCard/ProjectCard"
 
+import prataut from "../../assets/prataut_preview.png"
+
 import kotteklivSmall from "../../assets/kottekliv_preview_small.webp"
 import kotteklivMedium from "../../assets/kottekliv_preview_medium.webp"
 import kotteklivLarge from "../../assets/kottekliv_preview_large.webp"
@@ -16,6 +18,18 @@ export default function ProjectsSection() {
   return(
     <Container id="projects" center>
       <h2>Utvalda Projekt</h2>
+      <ProjectCard
+        title="Prataut - Forum för psykisk hälsa"
+        description="En community-plattform utformad för att sänka tröskeln till professionell hjälp genom anonymt erfarenhetsutbyte. Användare kan dela personliga utmaningar, stötta varandra i ett modererat forum och bygga upp det självförtroende som krävs för att ta nästa steg i sin mentala hälsa."
+        skills={["React", "Node.js", "Express", "MongoDB", "Mongoose", "REST-API"]}
+        codeLink="https://github.com/goteborg-1/prata-community-platform"
+        previewImg={{
+          small: prataut,
+          medium: prataut,
+          large: prataut,
+          alt: "Prataut logo preview"
+        }}
+      />
       <ProjectCard
         title="Produktivitetsapp"
         description="Ett produktivitetsverktyg för tidshantering, utvecklat som ett samarbetsprojekt i ett monorepo. Projektet omfattar en komplett webbapplikation i React samt utvalda delar implementerade i React Native för att utforska koddelning mellan plattformar. Appen erbjuder både stoppur och pomodoro-timer med datavisualisering via grafer, samt en integrerad Todo-modul för uppgiftshantering."
