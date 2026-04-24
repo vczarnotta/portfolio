@@ -7,7 +7,7 @@ interface ProjectCardProps {
   description: string,
   skills: string[],
   codeLink: string,
-  demoLink: string,
+  demoLink?: string,
   previewImg: {
     small: string,
     medium: string,
@@ -49,7 +49,8 @@ export default function ProjectCard({title, description, skills, codeLink, demoL
             <span className={s.icon}><LuGithub /></span>
             <span>Kod</span>
           </a>
-          <a 
+          {demoLink ? (
+            <a 
             href={demoLink}
             target="_blank"
             rel="noopener noreferrer"
@@ -58,6 +59,15 @@ export default function ProjectCard({title, description, skills, codeLink, demoL
             <span className={s.icon}><LuExternalLink /></span>
             <span>Demo</span>
           </a>
+          ) : (
+            <button 
+            className={`${b.base} ${s.button} ${b.primary}`}
+            disabled
+            >
+              Under utveckling
+            </button>
+          )
+          }
         </div>
       </div>
     </article>

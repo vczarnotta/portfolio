@@ -19,6 +19,13 @@
   filter: brightness(0.9);
 }
 
+.base:disabled {
+  background-color: transparent;
+  color: var(--color-text-muted);
+  border: 2px dashed var(--color-secondary);
+  pointer-events: none;
+}
+
 .primary {
   background-color: var(--color-secondary);
 }
