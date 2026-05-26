@@ -20,9 +20,10 @@ export default function ProjectsSection() {
       <h2>Utvalda Projekt</h2>
       <ProjectCard
         title="Prataut - Forum för psykisk hälsa"
-        description="En community-plattform utformad för att sänka tröskeln till professionell hjälp genom anonymt erfarenhetsutbyte. Användare kan dela personliga utmaningar, stötta varandra i ett modererat forum och bygga upp det självförtroende som krävs för att ta nästa steg i sin mentala hälsa."
-        skills={["React", "Node.js", "Express", "MongoDB", "Mongoose", "REST-API"]}
+        description="En community-plattform utformad för att sänka tröskeln till professionell hjälp genom anonymt erfarenhetsutbyte. Användare kan dela personliga utmaningar och stötta varandra för att bygga upp det självförtroende som krävs för att ta nästa steg i sin mentala hälsa."
+        skills={["React", "Node.js", "Express", "MongoDB", "Mongoose", "Zod", "REST-API"]}
         codeLink="https://github.com/goteborg-1/prata-community-platform"
+        demoLink="https://prata-community-platform-frontend.vercel.app/"
         previewImg={{
           small: prataut,
           medium: prataut,
